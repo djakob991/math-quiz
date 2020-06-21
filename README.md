@@ -9,6 +9,7 @@ npm run createdb
 npm run build     // Alternatywnie, 
 npm run start     // npm run dev
 ```
+Następnie wejść w przeglądarce na adres http://localhost:5000/static/index.html
 
 ## Testowanie
 ```
