@@ -5,7 +5,19 @@ Aplikacja stworzona w ramach przedmiotu WWW na MIMUW.
 ```
 npm install
 npm run build-frontend
-npm run build   // Alternatywnie, 
-npm run start   // npm run dev
+npm run createdb
+npm run build     // Alternatywnie, 
+npm run start     // npm run dev
+```
+
+## Testowanie
+```
+npm test
+```
+
+## Czyśczenie
+```
+npm run clean 
+npm run clean-frontend
 ```
 
