@@ -1,0 +1,47 @@
+{
+  "name": "mathquiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "createdb": "node scripts/createdb.js",
+    "build-frontend": "tsc -p src/frontend/tsconfig.json",
+    "clean-frontend": "rm src/public/*.js && rm src/public/components/*.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p .",
+    "clean": "rm -r dist",
+    "start": "node dist/app.js",
+    "test": "npm run createdb && mocha -r ts-node/register ./test/tests.ts --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
+    "bcrypt": "^5.0.0",
+    "connect-sqlite3": "^0.9.11",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "http-errors": "^1.7.3",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.6",
+    "@types/express-session": "^1.17.0",
+    "@types/http-errors": "^1.6.3",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.0.13",
+    "@types/sqlite3": "^3.1.6",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
