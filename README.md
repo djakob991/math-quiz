@@ -1,22 +1,20 @@
-# MIMUW_WWW_project
-Aplikacja stworzona w ramach przedmiotu WWW na MIMUW.
 
-## Aby uruchomić lokalnie:
+## To run locally:
 ```
 npm install
 npm run build-frontend
 npm run createdb
-npm run build     // Alternatywnie, 
+npm run build     // Alternatively, 
 npm run start     // npm run dev
 ```
-Następnie wejść w przeglądarce na adres http://localhost:5000/static/index.html
+Then visit the address: http://localhost:5000/static/index.html
 
-## Testowanie
+## To test
 ```
 npm test
 ```
 
-## Czyśczenie
+## To clean
 ```
 npm run clean 
 npm run clean-frontend
